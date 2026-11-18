@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a1427" />
+  <meta name="description" content="راهنمای معرفی اردوگاه توحید، یادمان بازی‌دراز، یادمان مطلع‌الفجر، یادمان مرصاد و باغ‌موزه دفاع مقدس همدان؛ همراه با تاریخچه، موقعیت و نکات بازدید." />
+  <title>راهنمای راهیان نور غرب | یادمان‌ها و مراکز فرهنگی</title>
+  <style>
+    :root{
+      --bg:#081326;
+      --bg2:#0b1930;
+      --panel:#101f38;
+      --panel2:#132540;
+      --line:rgba(181,204,235,.13);
+      --text:#eef4ff;
+      --muted:#a8b7ce;
+      --muted2:#7f91ad;
+      --blue:#6ea8ff;
+      --cyan:#69d6dc;
+      --gold:#d7b77a;
+      --shadow:0 24px 70px rgba(0,0,0,.28);
+      --radius:22px;
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px}
+    body{
+      margin:0;background:
+        radial-gradient(ellipse at 82% 0%,rgba(56,103,163,.16),transparent 34%),
+        radial-gradient(ellipse at 0% 35%,rgba(37,92,125,.10),transparent 28%),
+        var(--bg);
+      color:var(--text);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.9;
+    }
+    a{color:inherit;text-decoration:none}
+    button,input{font:inherit}
+    .container{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+    .progress{position:fixed;top:0;right:0;height:3px;width:0;background:linear-gradient(90deg,var(--cyan),var(--blue));z-index:1000}
+    .topbar{position:sticky;top:0;z-index:100;background:rgba(8,19,38,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.4px;white-space:nowrap}
+    .brand-mark{width:38px;height:38px;display:grid;place-items:center;border:1px solid rgba(105,214,220,.45);border-radius:13px;color:var(--cyan);background:rgba(105,214,220,.08)}
+    .brand small{display:block;color:var(--muted2);font-size:10px;font-weight:500;line-height:1.3;letter-spacing:0}
+    .nav-links{display:flex;align-items:center;gap:23px;color:var(--muted);font-size:13px}
+    .nav-links a{transition:.2s}
+    .nav-links a:hover{color:var(--text)}
+    .nav-cta{border:1px solid rgba(110,168,255,.35);padding:8px 14px;border-radius:12px;color:#d9e8ff;font-size:12px;white-space:nowrap}
+    .hero{position:relative;overflow:hidden;padding:92px 0 72px;border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:46px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:.2px}
+    .eyebrow:before{content:"";width:28px;height:1px;background:var(--cyan)}
+    h1{font-size:clamp(38px,5vw,66px);line-height:1.22;letter-spacing:-2px;margin:18px 0 20px;font-weight:900}
+    h1 span{display:block;color:#8bb9f6}
+    .hero-copy{max-width:560px;color:var(--muted);font-size:15px;margin:0 0 27px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 18px;border-radius:13px;font-size:13px;font-weight:700;transition:.2s;border:1px solid transparent}
+    .btn-primary{background:linear-gradient(120deg,#77b8ff,#5a91e6);color:#07152a;box-shadow:0 10px 30px rgba(74,137,219,.2)}
+    .btn-primary:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .btn-ghost{border-color:var(--line);color:#dce8fb;background:rgba(255,255,255,.025)}
+    .btn-ghost:hover{border-color:rgba(110,168,255,.5);background:rgba(110,168,255,.07)}
+    .hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:35px;color:var(--muted2);font-size:11px}
+    .hero-meta strong{display:block;color:var(--text);font-size:19px;font-weight:800;line-height:1.45}
+    .hero-visual{position:relative;min-height:410px;border:1px solid rgba(145,180,222,.15);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#142d4a,#0d1b30 62%,#0c1729);box-shadow:var(--shadow)}
+    .hero-visual:before,.hero-visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}
+    .hero-visual:before{width:340px;height:340px;left:-80px;top:-115px;background:radial-gradient(circle,rgba(84,157,224,.22),transparent 70%)}
+    .hero-visual:after{width:300px;height:300px;right:-80px;bottom:-160px;background:radial-gradient(circle,rgba(81,192,191,.16),transparent 70%)}
+    .hero-svg{position:absolute;inset:0;width:100%;height:100%}
+    .visual-label{position:absolute;right:25px;bottom:24px;z-index:2;color:#e9f4ff;font-size:13px}
+    .visual-label small{display:block;color:#9cb2cd;font-size:10px;margin-top:4px}
+    .visual-tag{position:absolute;left:22px;top:22px;z-index:2;border:1px solid rgba(204,225,249,.18);background:rgba(6,17,31,.48);padding:7px 11px;border-radius:99px;color:#bcd6f3;font-size:10px}
+    .section{padding:76px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:28px}
+    .section-kicker{font-size:11px;color:var(--cyan);font-weight:700;letter-spacing:.6px}
+    h2{font-size:clamp(25px,3vw,36px);line-height:1.4;margin:6px 0 0;letter-spacing:-.7px}
+    .section-desc{color:var(--muted);font-size:13px;max-width:520px;margin:0}
+    .search-row{display:flex;gap:12px;margin-bottom:22px;align-items:center}
+    .search-box{flex:1;position:relative}
+    .search-box input{width:100%;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;padding:13px 44px 13px 15px;color:var(--text);outline:none;font-size:13px;transition:.2s}
+    .search-box input:focus{border-color:rgba(105,214,220,.55);box-shadow:0 0 0 3px rgba(105,214,220,.07)}
+    .search-icon{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--muted2);font-size:17px}
+    .filters{display:flex;gap:8px;flex-wrap:wrap}
+    .filter-btn{border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);font-size:11px;padding:9px 13px;cursor:pointer;transition:.2s}
+    .filter-btn.active,.filter-btn:hover{background:rgba(110,168,255,.12);border-color:rgba(110,168,255,.42);color:#dceaff}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .place-card{background:linear-gradient(160deg,rgba(19,37,64,.95),rgba(12,27,48,.95));border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.25s;min-width:0}
+    .place-card:hover{transform:translateY(-4px);border-color:rgba(110,168,255,.32);box-shadow:0 20px 48px rgba(0,0,0,.18)}
+    .card-art{height:174px;position:relative;overflow:hidden;background:linear-gradient(130deg,#1c3a5d,#11223b 62%,#0d1a2d)}
+    .card-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,16,31,.55),transparent 65%)}
+    .card-art svg{width:100%;height:100%;display:block}
+    .card-art img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9}
+    .card-number{position:absolute;top:14px;right:14px;z-index:2;width:30px;height:30px;display:grid;place-items:center;border-radius:10px;background:rgba(5,15,29,.65);border:1px solid rgba(206,225,249,.2);font-size:11px;color:#d9eaff}
+    .card-type{position:absolute;bottom:13px;right:14px;z-index:2;font-size:10px;color:#d4e8ff;background:rgba(5,15,29,.65);padding:5px 9px;border-radius:8px;border:1px solid rgba(206,225,249,.13)}
+    .card-body{padding:18px}
+    .card-location{color:var(--cyan);font-size:10px;margin-bottom:5px}
+    .card-body h3{font-size:18px;margin:0 0 9px}
+    .card-body p{font-size:12px;color:var(--muted);margin:0 0 15px;min-height:70px}
+    .card-link{font-size:11px;color:#a9ccff;display:inline-flex;align-items:center;gap:7px}
+    .card-link:hover{color:#fff}
+    .empty-state{display:none;padding:26px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);text-align:center;font-size:13px}
+    .details{padding-top:20px}
+    .detail-block{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;padding:37px 0;border-top:1px solid var(--line);scroll-margin-top:95px}
+    .detail-block:nth-of-type(even){grid-template-columns:1.1fr .9fr}
+    .detail-block:nth-of-type(even) .detail-media{order:2}
+    .detail-media{min-height:310px;border:1px solid var(--line);border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(145deg,#193858,#101e34 70%)}
+    .detail-media img{width:100%;height:100%;min-height:310px;object-fit:cover;display:block}
+    .detail-media .media-fallback{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden}
+    .media-caption{position:absolute;bottom:0;right:0;left:0;padding:22px 18px 14px;background:linear-gradient(0deg,rgba(5,14,26,.88),transparent);font-size:10px;color:#c7d8ee}
+    .detail-copy{min-width:0}
+    .detail-index{font-size:10px;color:var(--cyan);letter-spacing:.5px;font-weight:700}
+    .detail-copy h3{font-size:27px;margin:4px 0 5px;line-height:1.4}
+    .detail-sub{color:var(--muted2);font-size:12px;margin-bottom:18px}
+    .detail-copy p{font-size:13px;color:#c2cee0;margin:0 0 13px}
+    .fact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:20px 0}
+    .fact{padding:11px 13px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.025)}
+    .fact span{display:block;color:var(--muted2);font-size:10px;margin-bottom:3px}
+    .fact strong{font-size:12px;color:#e5efff;font-weight:700}
+    .detail-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .small-link{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid var(--line);border-radius:11px;color:#c7ddfc;font-size:11px}
+    .small-link:hover{border-color:rgba(105,214,220,.45);background:rgba(105,214,220,.05)}
+    .note{border-right:2px solid var(--gold);padding:10px 14px;margin:17px 0;background:rgba(215,183,122,.055);border-radius:0 10px 10px 0;color:#d8c7a6;font-size:11px}
+    .route-panel{border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,rgba(17,36,61,.96),rgba(10,24,43,.94));padding:28px;box-shadow:var(--shadow)}
+    .route-line{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:28px}
+    .route-line:before{content:"";position:absolute;top:17px;right:8%;left:8%;height:1px;background:linear-gradient(90deg,rgba(105,214,220,.2),rgba(110,168,255,.7),rgba(105,214,220,.2))}
+    .route-stop{position:relative;text-align:center;padding:0 7px}
+    .route-dot{width:34px;height:34px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:#142d4c;border:1px solid rgba(110,168,255,.6);color:#cde2ff;font-size:11px;position:relative;z-index:1;box-shadow:0 0 0 6px #102039}
+    .route-stop strong{display:block;font-size:11px;margin-bottom:4px}
+    .route-stop span{display:block;font-size:10px;color:var(--muted2)}
+    .route-note{font-size:11px;color:var(--muted);margin:22px 0 0;padding-top:17px;border-top:1px solid var(--line)}
+    .tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .tip{padding:19px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.025)}
+    .tip-icon{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:rgba(105,214,220,.09);color:var(--cyan);margin-bottom:12px;font-size:16px}
+    .tip h3{margin:0 0 7px;font-size:14px}
+    .tip p{margin:0;color:var(--muted);font-size:11px}
+    .sources{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .source-link{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);padding:12px 14px;border-radius:13px;color:#c4d8f4;font-size:11px;background:rgba(255,255,255,.018);transition:.2s}
+    .source-link:hover{background:rgba(110,168,255,.06);border-color:rgba(110,168,255,.35)}
+    .source-link b{color:var(--cyan);font-size:12px}
+    .source-link small{display:block;color:var(--muted2);font-size:9px;margin-top:3px}
+    .source-intro{font-size:11px;color:var(--muted);margin:0 0 17px}
+    footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted2);font-size:10px}
+    .footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .backtop{color:#afcff8}
+    .disclaimer{padding:13px 15px;border:1px solid var(--line);border-radius:13px;color:var(--muted);font-size:10px;margin-top:18px;background:rgba(255,255,255,.02)}
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr;gap:28px}.hero-visual{min-height:340px}.cards{grid-template-columns:repeat(2,1fr)}
+      .detail-block,.detail-block:nth-of-type(even){grid-template-columns:1fr 1fr;gap:22px}.detail-copy h3{font-size:23px}
+      .nav-links{gap:13px}.nav-links a:nth-child(4){display:none}
+    }
+    @media(max-width:640px){
+      .container{width:min(calc(100% - 28px),var(--max))}.nav{height:66px}.nav-links{display:none}.nav-cta{font-size:10px;padding:7px 10px}
+      .hero{padding:58px 0 48px}.hero-grid{gap:24px}h1{font-size:42px;letter-spacing:-1.5px}.hero-copy{font-size:13px}.hero-visual{min-height:270px}
+      .section{padding:54px 0}.section-head{display:block}.section-desc{margin-top:10px}.search-row{display:block}.filters{margin-top:11px}
+      .cards{grid-template-columns:1fr}.card-art{height:195px}.card-body p{min-height:0}
+      .detail-block,.detail-block:nth-of-type(even){grid-template-columns:1fr;padding:27px 0;gap:18px}.detail-block:nth-of-type(even) .detail-media{order:0}.detail-media{min-height:230px}.detail-media img{min-height:230px}
+      .detail-copy h3{font-size:24px}.fact-grid{grid-template-columns:1fr 1fr}.route-panel{padding:19px}.route-line{grid-template-columns:1fr;gap:13px;margin-top:18px}.route-line:before{top:12px;bottom:12px;right:16px;left:auto;width:1px;height:auto}
+      .route-stop{display:grid;grid-template-columns:34px 1fr;gap:0 13px;text-align:right;padding:0}.route-dot{grid-row:span 2;margin:0}.route-stop strong{align-self:end}.route-stop span{align-self:start}
+      .tips-grid{grid-template-columns:1fr}.sources{grid-template-columns:1fr}.hero-meta{gap:17px}.hero-meta strong{font-size:17px}
+    }
+    @media print{
+      body{background:#fff;color:#111}.topbar,.progress,.hero-actions,.search-row,.detail-actions,.backtop{display:none!important}
+      .hero{padding:20px 0}.hero-visual,.place-card,.detail-media,.route-panel,.tip,.source-link{box-shadow:none;break-inside:avoid}
+      .section{padding:20px 0}.place-card,.route-panel,.tip,.source-link{background:#fff;border:1px solid #ccc;color:#111}
+      .card-body p,.detail-copy p,.section-desc,.route-note,.tip p,.source-intro{color:#333}
+      .detail-block{break-inside:avoid}.detail-copy h3,.card-body h3,h1,h2{color:#111}
+    }
+    .gallery-title{font-size:11px;color:#9fb4d1;margin:4px 0 8px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:0 0 18px}
+    .gallery a{display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#101e34;text-decoration:none}
+    .gallery img{width:100%;height:100px;object-fit:cover;display:block}
+    .gallery span{display:block;font-size:10px;color:#c7d8ee;padding:7px 9px;line-height:1.7}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="بازگشت به ابتدای صفحه">
+        <span class="brand-mark">◈</span>
+        <span>مسیر غرب<small>راهنمای یادمان‌های دفاع مقدس</small></span>
+      </a>
+      <nav class="nav-links" aria-label="منوی اصلی">
+        <a href="#places">یادمان‌ها</a>
+        <a href="#route">مسیر پیشنهادی</a>
+        <a href="#tips">راهنمای بازدید</a>
+        <a href="#sources">منابع</a>
+      </nav>
+      <a class="nav-cta" href="#places">مشاهده مقصدها <span>←</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">راهنمای سفر فرهنگی و تاریخی</div>
+          <h1>راهیان نور <span>غرب ایران</span></h1>
+          <p class="hero-copy">روایتی مستند از پنج ایستگاه در مسیر غرب؛ از اردوگاه خدماتی توحید و ارتفاعات بازی‌دراز تا یادمان مطلع‌الفجر، تنگه مرصاد و باغ‌موزه دفاع مقدس همدان. در این راهنما، تاریخچه، موقعیت، ویژگی‌های بازدید و منابع هر مقصد را یک‌جا بخوانید.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#places">شناخت مقصدها <span>←</span></a>
+            <a class="btn btn-ghost" href="#route">دیدن مسیر پیشنهادی</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>۵</strong> مقصد معرفی‌شده</div>
+            <div><strong>۲</strong> استان</div>
+            <div><strong>۱۳۶۰–۱۳۶۷</strong> بازه رخدادهای اصلی</div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="تصویرسازی گرافیکی از رشته‌کوه‌های غرب ایران">
+          <span class="visual-tag">کرمانشاه · همدان</span>
+          <svg class="hero-svg" viewBox="0 0 640 440" preserveAspectRatio="xMidYMid slice" role="img" aria-label="خطوط گرافیکی کوهستان و مسیر سفر">
+            <defs>
+              <linearGradient id="mountainA" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#294c70"/><stop offset="1" stop-color="#142941"/></linearGradient>
+              <linearGradient id="mountainB" x1="0" x2="1"><stop stop-color="#1b3a58"/><stop offset="1" stop-color="#102139"/></linearGradient>
+              <linearGradient id="pathLine" x1="0" x2="1"><stop stop-color="#6bd8dc"/><stop offset="1" stop-color="#85b8ff"/></linearGradient>
+            </defs>
+            <circle cx="470" cy="112" r="63" fill="#8ab8e9" opacity=".08"/>
+            <path d="M0 294 L95 214 L154 250 L265 130 L345 222 L430 155 L520 240 L640 170 L640 440 L0 440Z" fill="url(#mountainA)" opacity=".9"/>
+            <path d="M0 340 L105 270 L180 310 L290 205 L372 300 L460 222 L540 304 L640 250 L640 440 L0 440Z" fill="url(#mountainB)"/>
+            <path d="M0 370 Q130 332 210 355 T390 345 T640 340 L640 440 L0 440Z" fill="#0b1b2e"/>
+            <path d="M104 301 C160 260 205 286 265 248 S378 220 420 254 S515 285 558 230" fill="none" stroke="url(#pathLine)" stroke-width="2.2" stroke-dasharray="5 8" opacity=".95"/>
+            <g fill="#d9ecff" stroke="#7fc6e8" stroke-width="1.4">
+              <circle cx="104" cy="301" r="5"/><circle cx="265" cy="248" r="5"/><circle cx="420" cy="254" r="5"/><circle cx="558" cy="230" r="5"/>
+            </g>
+            <g fill="none" stroke="#8cb5dd" stroke-width="1" opacity=".22">
+              <path d="M28 104 H250 M28 117 H180 M402 54 H600"/><path d="M470 80 V142 M460 91 H480"/>
+              <path d="M72 390 C165 365 215 375 302 359 S465 379 590 350"/>
+            </g>
+          </svg>
+          <div class="visual-label">از خاطره تا شناخت <small>پنج مقصد · یک مسیر تاریخی</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="places">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">DESTINATIONS / مقصدها</div><h2>ایستگاه‌های مسیر غرب</h2></div>
+          <p class="section-desc">هر کارت را انتخاب کنید تا به معرفی تفصیلی، پیشینه تاریخی، موقعیت و نکات بازدید همان مقصد برسید.</p>
+        </div>
+        <div class="search-row">
+          <label class="search-box"><span class="search-icon">⌕</span><input type="search" id="searchInput" placeholder="جست‌وجو بر اساس نام یادمان یا شهر..." aria-label="جست‌وجوی یادمان‌ها"></label>
+          <div class="filters" role="group" aria-label="فیلتر بر اساس نوع مقصد">
+            <button class="filter-btn active" data-filter="all">همه</button>
+            <button class="filter-btn" data-filter="memorial">یادمان‌ها</button>
+            <button class="filter-btn" data-filter="service">خدماتی</button>
+            <button class="filter-btn" data-filter="museum">موزه</button>
+          </div>
+        </div>
+        <div class="cards" id="cardsGrid">
+          <article class="place-card" data-category="service" data-search="اردوگاه توحید کرمانشاه جاده همدان اسکان پشتیبانی کاروان">
+            <a href="#tohid" aria-label="مطالعه درباره اردوگاه توحید">
+              <div class="card-art">
+                <img src="images/tohid-camp.jpg" alt="تصویر اردوگاه توحید" loading="lazy" onerror="this.style.display='none'" />
+                <span class="card-number">۰۱</span><span class="card-type">پایگاه خدمات و اسکان</span>
+              </div>
+              <div class="card-body"><div class="card-location">استان کرمانشاه · ورودی شهر</div><h3>اردوگاه توحید</h3><p>پایگاه پشتیبانی و اسکان کاروان‌ها در ورودی کرمانشاه از سمت جاده همدان؛ مناسب برای شناخت ساختار میزبانی زائران.</p><span class="card-link">مشاهده جزئیات <b>←</b></span></div>
+            </a>
+          </article>
+          <article class="place-card" data-category="memorial" data-search="یادمان بازی دراز سرپل ذهاب ارتفاعات عملیات اردیبهشت 1360 شهدای گمنام">
+            <a href="#bazideraz" aria-label="مطالعه درباره یادمان بازی دراز">
+              <div class="card-art">
+                <img src="images/bazi-draz.jpg" alt="تصویر یادمان بازی‌دراز" loading="lazy" onerror="this.style.display='none'" />
+                <span class="card-number">۰۲</span><span class="card-type">ارتفاعات و یادمان</span>
+              </div>
+              <div class="card-body"><div class="card-location">سرپل‌ذهاب · ارتفاعات بازی‌دراز</div><h3>یادمان بازی‌دراز</h3><p>ارتفاعاتی راهبردی در غرب کرمانشاه؛ محل یادبود عملیات اردیبهشت ۱۳۶۰ و آرامگاه سه شهید گمنام در ارتفاعات یادمان.</p><span class="card-link">مشاهده جزئیات <b>←</b></span></div>
+            </a>
+          </article>
+          <article class="place-card" data-category="memorial" data-search="یادمان مطلع الفجر گیلانغرب آوزین گورسفید شیاکوه عملیات آذر 1360">
+            <a href="#motla" aria-label="مطالعه درباره یادمان مطلع الفجر">
+              <div class="card-art">
+                <img src="images/matlaol-fajr.jpg" alt="تصویر یادمان مطلع‌الفجر" loading="lazy" onerror="this.style.display='none'" />
+                <span class="card-number">۰۳</span><span class="card-type">یادمان میدانی</span>
+              </div>
+              <div class="card-body"><div class="card-location">گیلان‌غرب · حوالی روستای آوزین</div><h3>یادمان مطلع‌الفجر</h3><p>یادمانی در کنار سنگرها و کانال‌های حفظ و بازسازی‌شده؛ مرتبط با عملیات مطلع‌الفجر در آذر و دی ۱۳۶۰.</p><span class="card-link">مشاهده جزئیات <b>←</b></span></div>
+            </a>
+          </article>
+          <article class="place-card" data-category="memorial" data-search="یادمان مرصاد تنگه چهارزبر کرمانشاه اسلام آباد غرب عملیات 5 مرداد 1367">
+            <a href="#mersad" aria-label="مطالعه درباره یادمان مرصاد">
+              <div class="card-art">
+                <img src="images/mersad.jpg" alt="تابلوی یادمان شهدای مرصاد در منطقه چهارزبر" loading="lazy" onerror="this.style.display='none'" />
+                <span class="card-number">۰۴</span><span class="card-type">یادمان عملیات مرصاد</span>
+              </div>
+              <div class="card-body"><div class="card-location">کرمانشاه · تنگه چهارزبر</div><h3>یادمان مرصاد</h3><p>در حوالی تنگه چهارزبر و در مسیر جاده کرمانشاه؛ یادآور عملیات پنجم مرداد ۱۳۶۷ در واپسین روزهای جنگ.</p><span class="card-link">مشاهده جزئیات <b>←</b></span></div>
+            </a>
+          </article>
+          <article class="place-card" data-category="museum" data-search="باغ موزه دفاع مقدس همدان میدان قائم بلوار کولاب گالری ها موزه">
+            <a href="#hamedan" aria-label="مطالعه درباره باغ موزه دفاع مقدس همدان">
+              <div class="card-art">
+                <img src="images/hamedan-museum.jpg" alt="فضای داخلی و نمایشگاه باغ‌موزه دفاع مقدس همدان" loading="lazy" onerror="this.style.display='none'" />
+                <span class="card-number">۰۵</span><span class="card-type">مرکز فرهنگی و موزه</span>
+              </div>
+              <div class="card-body"><div class="card-location">همدان · میدان قائم</div><h3>باغ‌موزه دفاع مقدس همدان</h3><p>مجموعه‌ای فرهنگی با گالری‌های موضوعی، محوطه بیرونی، تندیس‌ها، آثار و روایت نقش همدان در دفاع مقدس.</p><span class="card-link">مشاهده جزئیات <b>←</b></span></div>
+            </a>
+          </article>
+        </div>
+        <div class="empty-state" id="emptyState">مقصدی با این عبارت پیدا نشد. نام شهر یا بخشی از نام یادمان را وارد کنید.</div>
+      </div>
+    </section>
+
+    <section class="section details" id="details">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">HISTORY & LOCATION / معرفی تفصیلی</div><h2>تاریخچه و راهنمای هر مقصد</h2></div>
+          <p class="section-desc">اطلاعات تاریخی از منابع خبری و گزارش‌های محلی گردآوری شده‌اند. نکات مربوط به ساعت، ظرفیت و خدمات فقط در صورت وجود گزارش مشخص درج شده‌اند.</p>
+        </div>
+
+        <article class="detail-block" id="tohid">
+          <div class="detail-media">
+            <img src="images/tohid-camp.jpg" alt="تصویر اردوگاه توحید" loading="lazy" onerror="this.style.display='none'" />
+            <div class="media-caption">تصویر اردوگاه توحید</div>
+          </div>
+          <div class="detail-copy">
+            <div class="detail-index">۰۱ / پایگاه خدماتی</div>
+            <h3>اردوگاه توحید</h3>
+            <div class="detail-sub">ورودی شهر کرمانشاه از سمت جاده همدان · استان کرمانشاه</div>
+            <p>اردوگاه توحید در منابع مربوط به میزبانی زائران، به‌عنوان یکی از ظرفیت‌های اسکان و پشتیبانی استان کرمانشاه معرفی شده است. برخلاف سه مقصد عملیاتی این راهنما، توحید در درجه نخست یک پایگاه خدماتی برای زائران و کاروان‌هاست و نباید آن را با یک یادمان میدانیِ مرتبط با یک عملیات مشخص اشتباه گرفت.</p>
+            <p>در گزارشی از اجرای برنامه فرهنگی «فصل شیدایی» در کرمانشاه، محل اجرا اردوگاه توحید و نشانی آن «ورودی شهر کرمانشاه از سمت جاده همدان» ذکر شده است. گزارش دیگری از سال ۱۳۹۶، ظرفیت اعلام‌شده اردوگاه برای اسکان زائران اربعین را ۲۰۰۰ نفر عنوان می‌کند.</p>
+            <div class="fact-grid">
+              <div class="fact"><span>موقعیت اعلام‌شده</span><strong>ورودی کرمانشاه از جاده همدان</strong></div>
+              <div class="fact"><span>نوع کاربری</span><strong>اسکان و پشتیبانی زائران</strong></div>
+              <div class="fact"><span>ظرفیت گزارش‌شده</span><strong>۲۰۰۰ نفر · گزارش سال ۱۳۹۶</strong></div>
+              <div class="fact"><span>ساعت و شرایط پذیرش</span><strong>نیازمند هماهنگی قبلی</strong></div>
+            </div>
+            <div class="note">ظرفیت ۲۰۰۰ نفر مربوط به گزارشی در سال ۱۳۹۶ و در زمینه اسکان زائران اربعین است؛ این عدد را نباید ظرفیت قطعی یا خدمات فعال در زمان سفر فعلی دانست.</div>
+            <p><strong>پیشنهاد بازدید:</strong> اگر اردوگاه در برنامه اسکان یا تجمع کاروان شما قرار دارد، پیش از حرکت از مسئول اردو یا برگزارکننده درباره فعال بودن محل، ظرفیت روز، امکانات قابل استفاده و ضوابط ورود استعلام بگیرید.</p>
+            <div class="detail-actions">
+              <a class="small-link" href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D8%B1%D8%AF%D9%88%DA%AF%D8%A7%D9%87+%D8%AA%D9%88%D8%AD%DB%8C%D8%AF+%DA%A9%D8%B1%D9%85%D8%A7%D9%86%D8%B4%D8%A7%D9%87" target="_blank" rel="noopener">نمایش در نقشه ↗</a>
+              <a class="small-link" href="https://www.tasnimnews.ir/fa/news/1394/06/08/844479/%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86%DB%8C-%D9%86%D9%85%D8%A7%DB%8C%D8%B4-%D9%81%D8%B5%D9%84-%D8%B4%DB%8C%D8%AF%D8%A7%DB%8C%DB%8C-%D8%A7%D8%B2-%DA%A9%D8%A7%D8%B1%D9%88%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%B1%D8%A7%D9%87%DB%8C%D8%A7%D9%86-%D9%86%D9%88%D8%B1-%D8%AF%D8%B1-%DA%A9%D8%B1%D9%85%D8%A7%D9%86%D8%B4%D8%A7%D9%87" target="_blank" rel="noopener">منبع موقعیت ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-block" id="bazideraz">
+          <div class="detail-media">
+            <img src="images/bazi-draz.jpg" alt="گنبد یادمان شهدای بازی‌دراز بر فراز ارتفاعات، با پرچم‌ها و زائران" loading="lazy" onerror="this.style.display='none'" />
+            <div class="media-caption">تصویر یادمان بازی‌دراز</div>
+          </div>
+          <div class="detail-copy">
+            <div class="detail-index">۰۲ / یادمان ارتفاعات</div>
+            <h3>یادمان بازی‌دراز</h3>
+            <div class="detail-sub">شهرستان سرپل‌ذهاب · ارتفاعات بازی‌دراز · استان کرمانشاه</div>
+            <p>بازی‌دراز رشته‌ارتفاعاتی مرزی در غرب استان کرمانشاه است که بر بخش‌هایی از دشت و شهرهای پیرامونی از جمله سرپل‌ذهاب، قصرشیرین و نفت‌شهر اشراف دارد. همین موقعیت جغرافیایی، ارتفاعات را در روزهای آغازین جنگ به نقطه‌ای مهم تبدیل کرد و نیروهای عراقی از آن برای دیده‌بانی و تسلط بر منطقه استفاده می‌کردند.</p>
+            <p>عملیات بازی‌دراز از یکم اردیبهشت ۱۳۶۰ آغاز شد و در گزارش‌های تاریخیِ تسنیم، بازه آن تا دهم اردیبهشت همان سال ذکر شده است. این عملیات از تجربه‌های مهم همکاری ارتش و سپاه در جبهه غرب بود. در جریان نبرد، ارتفاعات جنوبی به تصرف نیروهای ایرانی درآمد، اما همه قله‌ها در همان مرحله آزاد نشدند. نقش هوانیروز در پشتیبانی عملیات برجسته بود و خلبان شهید علی‌اکبر شیرودی نیز در جریان همین نبرد به شهادت رسید.</p>
+            <p>در ارتفاعات یادمان، سه شهید گمنام به خاک سپرده شده‌اند. گزارش تسنیم ارتفاع محل یادمان را حدود ۱۱۰۰ متر ذکر کرده است؛ بنابراین بازدید از این مقصد، ماهیتی کوهستانی دارد و شرایط آب‌وهوا و مسیر باید در برنامه‌ریزی کاروان در نظر گرفته شود.</p>
+            <div class="fact-grid">
+              <div class="fact"><span>موقعیت</span><strong>ارتفاعات بازی‌دراز، سرپل‌ذهاب</strong></div>
+              <div class="fact"><span>رخداد تاریخی</span><strong>عملیات بازی‌دراز</strong></div>
+              <div class="fact"><span>زمان عملیات</span><strong>۱ تا ۱۰ اردیبهشت ۱۳۶۰</strong></div>
+              <div class="fact"><span>ویژگی یادمان</span><strong>آرامگاه سه شهید گمنام</strong></div>
+            </div>
+            <div class="note">تاریخ پایان عملیات در برخی روایت‌ها یکسان گزارش نشده است؛ بازه ۱ تا ۱۰ اردیبهشت ۱۳۶۰ مطابق اینفوگرافیک و گزارش تسنیم در این صفحه درج شده است.</div>
+            <p><strong>نکته بازدید:</strong> ارتفاعات را فقط در قالب مسیرهای تعیین‌شده و با هماهنگی مسئولان محلی یا کاروان بازدید کنید. برای صعودهای مناسبتی، زمان‌بندی و وضعیت راه را جداگانه استعلام کنید.</p>
+            <div class="gallery-title">تصاویر بیشتر</div>
+            <div class="gallery">
+              <a href="images/bazi-draz-aerial.jpg" target="_blank" rel="noopener"><img src="images/bazi-draz-aerial.jpg" alt="نمای شبانه یادمان با نورپردازی" loading="lazy" onerror="this.closest('a').style.display='none'" /><span>نمای شبانه یادمان با نورپردازی</span></a>
+              <a href="images/bazi-draz-memorial.jpg" target="_blank" rel="noopener"><img src="images/bazi-draz-memorial.jpg" alt="گنبد و سردر یادمان از نمای نزدیک" loading="lazy" onerror="this.closest('a').style.display='none'" /><span>گنبد و سردر یادمان از نمای نزدیک</span></a>
+            </div>
+            <div class="detail-actions">
+              <a class="small-link" href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%D8%A7%D8%AA+%D8%A8%D8%A7%D8%B2%DB%8C+%D8%AF%D8%B1%D8%A7%D8%B2+%D8%B3%D8%B1%D9%BE%D9%84+%D8%B0%D9%87%D8%A7%D8%A8" target="_blank" rel="noopener">نمایش در نقشه ↗</a>
+              <a class="small-link" href="https://www.tasnimnews.ir/fa/news/1401/02/15/2705379/%D8%A7%DB%8C%D9%86%D9%81%D9%88%DA%AF%D8%B1%D8%A7%D9%81%DB%8C%DA%A9-%DB%8C%D8%A7%D8%AF%D9%85%D8%A7%D9%86-%D8%B4%D9%87%D8%AF%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%AF%D8%B1%D8%A7%D8%B2-%DA%A9%D8%AC%D8%A7%D8%B3%D8%AA" target="_blank" rel="noopener">منبع تاریخی و تصویر ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-block" id="motla">
+          <div class="detail-media">
+            <img src="images/matlaol-fajr.jpg" alt="تصویر یادمان مطلع‌الفجر" loading="lazy" onerror="this.style.display='none'" />
+            <div class="media-caption">تصویر یادمان مطلع‌الفجر</div>
+          </div>
+          <div class="detail-copy">
+            <div class="detail-index">۰۳ / یادمان میدانی</div>
+            <h3>یادمان مطلع‌الفجر</h3>
+            <div class="detail-sub">گیلان‌غرب · حوالی روستای آوزین و غرب گورسفید · استان کرمانشاه</div>
+            <p>یادمان شهدای مطلع‌الفجر در منطقه عملیاتی گیلان‌غرب قرار دارد. طبق گزارش محلی، این محل در کنار روستای آوزین و در غرب گورسفید واقع شده و بخش‌هایی از سنگرها و کانال‌های منطقه حفظ یا بازسازی شده‌اند. پرچم‌ها و مسیرهای سنگری، فضای یادمان را شکل می‌دهند. مزار شهید صفر خوش‌روان نیز در نزدیکی این محدوده قرار دارد.</p>
+            <p>عملیات مطلع‌الفجر در ۲۰ آذر ۱۳۶۰ با رمز «یا مهدی ادرکنی» آغاز شد و تا ۶ دی ۱۳۶۰ ادامه یافت. این عملیات با مشارکت نیروهای سپاه و ارتش و با هدف آزادسازی ارتفاعات غرب گیلان‌غرب و کاهش فشار دشمن بر محورهای منطقه انجام شد. در مراحل نخست، ارتفاعاتی از جمله شیاکوه و چرمیان به تصرف نیروهای ایرانی درآمد؛ با ادامه پاتک‌ها و دشواری پشتیبانی، تثبیت همه مواضع ممکن نشد و نیروها پس از چندین روز مقاومت به مواضع پیشین بازگشتند.</p>
+            <div class="fact-grid">
+              <div class="fact"><span>موقعیت یادمان</span><strong>حوالی آوزین، غرب گورسفید</strong></div>
+              <div class="fact"><span>منطقه عملیاتی</span><strong>گیلان‌غرب و شیاکوه</strong></div>
+              <div class="fact"><span>زمان عملیات</span><strong>۲۰ آذر تا ۶ دی ۱۳۶۰</strong></div>
+              <div class="fact"><span>رمز عملیات</span><strong>یا مهدی ادرکنی</strong></div>
+            </div>
+            <p><strong>چه چیزی در بازدید دیده می‌شود؟</strong> سنگرها و کانال‌های حفظ‌شده یا بازسازی‌شده و نشانه‌های یادمانی منطقه. این مقصد در فضای باز قرار دارد و وضعیت آب‌وهوا، دسترسی جاده‌ای و شرایط محلی می‌تواند بر بازدید اثر بگذارد.</p>
+            <div class="note">جزئیات کالبدی و نشانی یادمان بر اساس گزارش محلی منتشرشده درباره منطقه آوزین است؛ برای مسیر دقیق ورود، از راهنمای کاروان یا مسئولان محلی کمک بگیرید.</div>
+            <div class="gallery-title">تصاویر بیشتر</div>
+            <div class="gallery">
+              <a href="images/matlaol-fajr-region.jpg" target="_blank" rel="noopener"><img src="images/matlaol-fajr-region.jpg" alt="تانک در محوطه‌ی منطقه" loading="lazy" onerror="this.closest('a').style.display='none'" /><span>تانک در محوطه‌ی منطقه</span></a>
+            </div>
+            <div class="detail-actions">
+              <a class="small-link" href="https://www.google.com/maps/search/?api=1&query=%DB%8C%D8%A7%D8%AF%D9%85%D8%A7%D9%86+%D9%85%D8%B7%D9%84%D8%B9+%D8%A7%D9%84%D9%81%D8%AC%D8%B1+%DA%AF%DB%8C%D9%84%D8%A7%D9%86%D8%BA%D8%B1%D8%A8" target="_blank" rel="noopener">جست‌وجو در نقشه ↗</a>
+              <a class="small-link" href="https://shahreroshan.ir/?p=2755" target="_blank" rel="noopener">منبع موقعیت و شرح منطقه ↗</a>
+              <a class="small-link" href="https://www.setareganeporfrough.ir/%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D9%85%D8%B7%D9%84%D8%B9-%D8%A7%D9%84%D9%81%D8%AC%D8%B1/" target="_blank" rel="noopener">منبع تاریخ عملیات ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-block" id="mersad">
+          <div class="detail-media">
+            <img src="images/mersad.jpg" alt="تابلوی یادمان شهدای مرصاد در محدوده تنگه چهارزبر" loading="lazy" onerror="this.style.display='none'" />
+            <div class="media-caption">تصویر یادمان مرصاد</div>
+          </div>
+          <div class="detail-copy">
+            <div class="detail-index">۰۴ / یادمان عملیات</div>
+            <h3>یادمان مرصاد</h3>
+            <div class="detail-sub">تنگه چهارزبر · حدود ۲۵ کیلومتری غرب کرمانشاه · مسیر جاده کرمانشاه</div>
+            <p>یادمان مرصاد در حوالی تنگه چهارزبر و در مسیر اصلی غرب کرمانشاه قرار دارد. این تنگه به دلیل قرار گرفتن در مسیر پیشروی نیروهای سازمان مجاهدین خلق در روزهای پایانی جنگ، به محل یکی از رخدادهای سرنوشت‌ساز تابستان ۱۳۶۷ تبدیل شد. در گزارش تصویری تسنیم در مرداد ۱۴۰۵، موقعیت یادمان حدود ۲۵ کیلومتری غرب شهر کرمانشاه و در جاده اصلی موسوم به راه کربلا معرفی شده است.</p>
+            <p>پس از پذیرش قطعنامه ۵۹۸، نیروهای سازمان مجاهدین خلق با پشتیبانی ارتش عراق در سوم مرداد ۱۳۶۷ از مرزهای غربی وارد ایران شدند و به سمت کرمانشاه پیشروی کردند. در تنگه چهارزبر، پیشروی آن‌ها متوقف شد و عملیات مرصاد در پنجم مرداد ۱۳۶۷ با رمز «یا علی‌ابن‌ابی‌طالب(ع)» آغاز شد. این رخداد در شمار آخرین عملیات‌های بزرگ جنگ ایران و عراق قرار می‌گیرد.</p>
+            <p>اهمیت یادمان فقط به ثبت یک عملیات محدود نیست؛ این مکان یادآور وضعیت پیچیده روزهای پایانی جنگ، نقش مردم و نیروهای ایرانی در دفاع از منطقه و پیامدهای تصمیم‌های سیاسی و نظامی آن دوره است.</p>
+            <div class="fact-grid">
+              <div class="fact"><span>موقعیت</span><strong>تنگه چهارزبر، غرب کرمانشاه</strong></div>
+              <div class="fact"><span>فاصله گزارش‌شده</span><strong>حدود ۲۵ کیلومتر از کرمانشاه</strong></div>
+              <div class="fact"><span>تاریخ عملیات</span><strong>۵ مرداد ۱۳۶۷</strong></div>
+              <div class="fact"><span>رمز عملیات</span><strong>یا علی‌ابن‌ابی‌طالب(ع)</strong></div>
+            </div>
+            <p><strong>پیشنهاد بازدید:</strong> در محل یادمان، ابتدا تابلوهای معرفی و توضیحات تاریخی را مطالعه کنید و برای توقف در حاشیه جاده، فقط از فضاهای مجاز و امن استفاده کنید. زمان مراسم سالانه با روزهای عادی بازدید متفاوت است.</p>
+            <div class="gallery-title">تصاویر بیشتر</div>
+            <div class="gallery">
+              <a href="images/mersad-strait.jpg" target="_blank" rel="noopener"><img src="images/mersad-strait.jpg" alt="خودروهای منهدم‌شده در منطقه" loading="lazy" onerror="this.closest('a').style.display='none'" /><span>خودروهای منهدم‌شده در منطقه</span></a>
+            </div>
+            <div class="detail-actions">
+              <a class="small-link" href="https://www.google.com/maps/search/?api=1&query=%DB%8C%D8%A7%D8%AF%D9%85%D8%A7%D9%86+%D9%85%D8%B1%D8%B5%D8%A7%D8%AF+%D8%AA%D9%86%DA%AF%D9%87+%DA%86%D9%87%D8%A7%D8%B1%D8%B2%D8%A8%D8%B1" target="_blank" rel="noopener">نمایش در نقشه ↗</a>
+              <a class="small-link" href="https://www.tasnimnews.ir/fa/news/1405/05/05/3657242/%D8%A8%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%AA-5-%D9%85%D8%B1%D8%AF%D8%A7%D8%AF-%D8%B3%D8%A7%D9%84%D8%B1%D9%88%D8%B2-%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D9%85%D8%B1%D8%B5%D8%A7%D8%AF-%D9%88-%D8%B1%D9%88%D8%B2-%D9%85%D9%84%DB%8C-%DA%A9%D8%B1%D9%85%D8%A7%D9%86%D8%B4%D8%A7%D9%87" target="_blank" rel="noopener">منبع موقعیت و تصویر ↗</a>
+              <a class="small-link" href="https://www.tasnimnews.ir/fa/news/1405/05/05/3657636/%D8%AC%D9%86%D8%A7%DB%8C%D8%A7%D8%AA-%D9%88%D8%AD%D8%B4%DB%8C%D8%A7%D9%86%D9%87-%D9%85%D9%86%D8%A7%D9%81%D9%82%DB%8C%D9%86-%D8%AF%D8%B1-%D9%81%D8%B1%D9%88%D8%BA-%D8%AC%D8%A7%D9%88%DB%8C%D8%AF%D8%A7%D9%86-%D8%AF%D8%B1%D8%B3-%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D9%85%D8%B1%D8%B5%D8%A7%D8%AF" target="_blank" rel="noopener">منبع تاریخ عملیات ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="detail-block" id="hamedan">
+          <div class="detail-media">
+            <img src="images/hamedan-museum.jpg" alt="یکی از فضاهای نمایشگاهی باغ‌موزه دفاع مقدس همدان" loading="lazy" onerror="this.style.display='none'" />
+            <div class="media-caption">تصویری از باغ‌موزه دفاع مقدس همدان</div>
+          </div>
+          <div class="detail-copy">
+            <div class="detail-index">۰۵ / مرکز فرهنگی و موزه</div>
+            <h3>باغ‌موزه دفاع مقدس همدان</h3>
+            <div class="detail-sub">همدان · میدان قائم، ابتدای بلوار کولاب</div>
+            <p>باغ‌موزه دفاع مقدس همدان با هدف نگهداری آثار و روایت نقش مردم و رزمندگان استان در دوران دفاع مقدس شکل گرفت. طرح ساخت مجموعه در سال ۱۳۷۶ آغاز شد و بهره‌برداری از آن در آبان ۱۳۸۹، هم‌زمان با کنگره سرداران، امیران و هشت هزار شهید استان، آغاز شد. در گزارش‌های تاریخی، وسعت مجموعه حدود ۶٫۵ هکتار عنوان شده است.</p>
+            <p>گزارش تسنیم در مهر ۱۴۰۵ از وجود شش گالری موضوعی خبر می‌دهد. محورهای معرفی‌شده شامل نقش سپاه و بسیج، مهندسی جنگ و جهاد سازندگی، نقش نیروی هوایی ارتش با تمرکز بر پایگاه سوم شکاری شهید نوژه و نقش بنیاد شهید و امور ایثارگران است. در محوطه بیرونی نیز تندیس‌ها و سردیس‌ها، ادوات و تجهیزات به‌جامانده از جنگ، آبنمای موزیکال و یادمان نام حدود هشت هزار شهید استان معرفی شده‌اند.</p>
+            <p>در بخش‌های داخلی، روایت تاریخی دفاع مقدس و نقش همدان در پشتیبانی و عملیات‌ها ارائه می‌شود. همچنین گزارش مهر ۱۴۰۵ به وجود غرفه‌ای درباره شهید حاج حسین همدانی و فضای یادمانی شهدای مدافع حرم استان اشاره می‌کند.</p>
+            <div class="fact-grid">
+              <div class="fact"><span>نشانی</span><strong>میدان قائم، ابتدای بلوار کولاب</strong></div>
+              <div class="fact"><span>شروع ساخت</span><strong>سال ۱۳۷۶</strong></div>
+              <div class="fact"><span>آغاز بهره‌برداری</span><strong>آبان ۱۳۸۹</strong></div>
+              <div class="fact"><span>بخش‌های معرفی‌شده</span><strong>۶ گالری موضوعی</strong></div>
+            </div>
+            <div class="note">ساعت‌هایی که در گزارش ۷ مهر ۱۴۰۵ تسنیم اعلام شده: صبح از ۸:۳۰ تا پیش از اذان ظهر و عصر از ۱۵ تا پیش از نماز مغرب. این زمان‌ها را برنامه قطعی همه روزها تلقی نکنید و پیش از مراجعه، ساعت همان روز را استعلام کنید.</div>
+            <p><strong>برای بازدید بهتر:</strong> برای مشاهده کامل گالری‌ها و محوطه بیرونی زمان کافی در نظر بگیرید. اگر برنامه گروهی یا دانش‌آموزی دارید، درباره امکان بازدید راهنمایی‌شده، وضعیت فعالیت آبنمای موزیکال و شرایط پذیرش گروه از مجموعه استعلام کنید.</p>
+            <div class="gallery-title">تصاویر بیشتر</div>
+            <div class="gallery">
+              <a href="images/hamedan-museum-exterior.jpg" target="_blank" rel="noopener"><img src="images/hamedan-museum-exterior.jpg" alt="محوطه‌ی بیرونی؛ تندیس‌ها و مسیر آب" loading="lazy" onerror="this.closest('a').style.display='none'" /><span>محوطه‌ی بیرونی؛ تندیس‌ها و مسیر آب</span></a>
+              <a href="images/hamedan-museum-interior.jpg" target="_blank" rel="noopener"><img src="images/hamedan-museum-interior.jpg" alt="ادوات و گنبد در محوطه‌ی موزه" loading="lazy" onerror="this.closest('a').style.display='none'" /><span>ادوات و گنبد در محوطه‌ی موزه</span></a>
+            </div>
+            <div class="detail-actions">
+              <a class="small-link" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%BA+%D9%85%D9%88%D8%B2%D9%87+%D8%AF%D9%81%D8%A7%D8%B9+%D9%85%D9%82%D8%AF%D8%B3+%D9%87%D9%85%D8%AF%D8%A7%D9%86" target="_blank" rel="noopener">نمایش در نقشه ↗</a>
+              <a class="small-link" href="https://www.tasnimnews.ir/fa/news/1405/07/07/3709108/%D8%B1%D9%88%D8%A7%DB%8C%D8%AA%DB%8C-%D8%B5%D8%A7%D8%AF%D9%82%D8%A7%D9%86%D9%87-%D8%A7%D8%B2-%D8%AD%D9%85%D8%A7%D8%B3%D9%87%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C-%D8%B1%D8%B2%D9%85%D9%86%D8%AF%DA%AF%D8%A7%D9%86-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%BA-%D9%85%D9%88%D8%B2%D9%87-%D8%AF%D9%81%D8%A7%D8%B9-%D9%85%D9%82%D8%AF%D8%B3" target="_blank" rel="noopener">منبع اطلاعات و ساعت بازدید ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="route">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">SUGGESTED ORDER / ترتیب پیشنهادی</div><h2>یک چینش جغرافیایی برای بازدید</h2></div>
+          <p class="section-desc">این ترتیب، صرفاً یک الگوی کلی بر اساس موقعیت شهرهاست؛ مسیر واقعی، زمان حرکت و امکان بازدید را با توجه به مبدأ سفر و برنامه کاروان تنظیم کنید.</p>
+        </div>
+        <div class="route-panel">
+          <div class="route-line">
+            <div class="route-stop"><div class="route-dot">۱</div><strong>باغ‌موزه همدان</strong><span>میدان قائم</span></div>
+            <div class="route-stop"><div class="route-dot">۲</div><strong>اردوگاه توحید</strong><span>ورودی کرمانشاه</span></div>
+            <div class="route-stop"><div class="route-dot">۳</div><strong>یادمان مرصاد</strong><span>تنگه چهارزبر</span></div>
+            <div class="route-stop"><div class="route-dot">۴</div><strong>مطلع‌الفجر</strong><span>گیلان‌غرب</span></div>
+            <div class="route-stop"><div class="route-dot">۵</div><strong>بازی‌دراز</strong><span>سرپل‌ذهاب</span></div>
+          </div>
+          <p class="route-note">نکته برنامه‌ریزی: باغ‌موزه در شهر همدان قرار دارد؛ اردوگاه توحید در ورودی کرمانشاه از سمت جاده همدان گزارش شده است. مرصاد در غرب کرمانشاه و دو یادمان مطلع‌الفجر و بازی‌دراز در محدوده شهرستان‌های گیلان‌غرب و سرپل‌ذهاب هستند. ترتیب پیشنهادی بالا باید با وضعیت جاده‌ها و مقصد نهایی گروه تطبیق داده شود.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">VISIT NOTES / نکات بازدید</div><h2>پیش از حرکت بدانید</h2></div>
+          <p class="section-desc">اطلاعات خدماتی یادمان‌های روباز ممکن است در روزهای عادی، مناسبت‌ها و فصل‌های مختلف تفاوت داشته باشد.</p>
+        </div>
+        <div class="tips-grid">
+          <div class="tip"><div class="tip-icon">⌖</div><h3>موقعیت و مسیر</h3><p>برای هر مقصد، لینک جست‌وجوی نقشه در همین صفحه قرار دارد. پیش از حرکت، نام مقصد را با راهنمای کاروان تطبیق دهید؛ به‌ویژه برای یادمان‌های واقع در ارتفاعات و مسیرهای روستایی.</p></div>
+          <div class="tip"><div class="tip-icon">◷</div><h3>زمان بازدید</h3><p>ساعت کاری قطعی و یکسانی برای همه یادمان‌های روباز در منابع بررسی‌شده پیدا نشد. ساعات باغ‌موزه همدان نیز باید در روز مراجعه دوباره استعلام شود.</p></div>
+          <div class="tip"><div class="tip-icon">◇</div><h3>بازدید گروهی</h3><p>برای اردوهای دانش‌آموزی یا کاروانی، هماهنگی قبلی با مسئول اردو، راهنمای محلی و متولی مجموعه، به‌ویژه درباره ظرفیت و خدمات اسکان، ضروری است.</p></div>
+        </div>
+        <div class="disclaimer">یادداشت پژوهشی: اطلاعات تاریخی و مکانی این وب‌سایت بر پایه منابع درج‌شده در بخش منابع گردآوری شده است. آدرس‌های نقشه، جست‌وجوی نام مکان در سرویس نقشه هستند و مختصات رسمی محسوب نمی‌شوند. هزینه بلیت، شماره تماس و وضعیت لحظه‌ای باز بودن برخی یادمان‌ها در منابع قابل اتکای در دسترس تأیید نشد؛ از درج عدد یا ساعت حدسی خودداری شده است.</div>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="section-kicker">REFERENCES / منابع</div><h2>منابع و مطالعه بیشتر</h2></div>
+          <p class="section-desc">برای بررسی جزئیات تاریخی، نشانی و تازه‌ترین اطلاعات، گزارش‌های زیر را باز کنید. تاریخ انتشار منابع در عنوان یا توضیح هر مورد مشخص شده است.</p>
+        </div>
+        <p class="source-intro">در صورت اختلاف جزئی تاریخ‌ها میان گزارش‌ها، متن صفحه بر اساس منبعی که برای همان ادعا مشخص شده تنظیم شده است.</p>
+        <div class="sources">
+          <a class="source-link" href="https://www.tasnimnews.ir/fa/news/1401/02/15/2705379/%D8%A7%DB%8C%D9%86%D9%81%D9%88%DA%AF%D8%B1%D8%A7%D9%81%DB%8C%DA%A9-%DB%8C%D8%A7%D8%AF%D9%85%D8%A7%D9%86-%D8%B4%D9%87%D8%AF%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%AF%D8%B1%D8%A7%D8%B2-%DA%A9%D8%AC%D8%A7%D8%B3%D8%AA" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · یادمان شهدای بازی‌دراز کجاست؟<small>موقعیت، ارتفاع و شهدای گمنام · ۱۵ اردیبهشت ۱۴۰۱</small></span></a>
+          <a class="source-link" href="https://tasnimnews.ir/fa/news/1404/02/02/3297000/%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%AF%D8%B1%D8%A7%D8%B2-%D9%86%D9%85%D8%A7%D8%AF-%D9%88%D8%AD%D8%AF%D8%AA-%D8%A7%D8%B1%D8%AA%D8%B4-%D9%88-%D8%B3%D9%BE%D8%A7%D9%87" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · عملیات بازی‌دراز؛ نماد وحدت ارتش و سپاه<small>پیشینه و جایگاه عملیات · ۲ اردیبهشت ۱۴۰۴</small></span></a>
+          <a class="source-link" href="https://shahreroshan.ir/?p=2755" target="_blank" rel="noopener"><b>↗</b><span>شهر روشن · نگاهی به رزمگاه عملیاتی در گیلان‌غرب<small>نشانی یادمان مطلع‌الفجر، آوزین و ویژگی‌های محل</small></span></a>
+          <a class="source-link" href="https://www.setareganeporfrough.ir/%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D9%85%D8%B7%D9%84%D8%B9-%D8%A7%D9%84%D9%81%D8%AC%D8%B1/" target="_blank" rel="noopener"><b>↗</b><span>ستارگان پرفروغ · عملیات مطلع‌الفجر<small>تاریخ آغاز و پایان، رمز و منطقه عملیات</small></span></a>
+          <a class="source-link" href="https://www.tasnimnews.ir/fa/news/1405/05/05/3657242/%D8%A8%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%AA-5-%D9%85%D8%B1%D8%AF%D8%A7%D8%AF-%D8%B3%D8%A7%D9%84%D8%B1%D9%88%D8%B2-%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D9%85%D8%B1%D8%B5%D8%A7%D8%AF-%D9%88-%D8%B1%D9%88%D8%B2-%D9%85%D9%84%DB%8C-%DA%A9%D8%B1%D9%85%D8%A7%D9%86%D8%B4%D8%A7%D9%87" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · یادمان مرصاد و روز ملی کرمانشاه<small>موقعیت تنگه چهارزبر و فاصله از کرمانشاه · ۵ مرداد ۱۴۰۵</small></span></a>
+          <a class="source-link" href="https://www.tasnimnews.ir/fa/news/1405/05/05/3657636/%D8%AC%D9%86%D8%A7%DB%8C%D8%A7%D8%AA-%D9%88%D8%AD%D8%B4%DB%8C%D8%A7%D9%86%D9%87-%D9%85%D9%86%D8%A7%D9%81%D9%82%DB%8C%D9%86-%D8%AF%D8%B1-%D9%81%D8%B1%D9%88%D8%BA-%D8%AC%D8%A7%D9%88%DB%8C%D8%AF%D8%A7%D9%86-%D8%AF%D8%B1%D8%B3-%D8%B9%D9%85%D9%84%DB%8C%D8%A7%D8%AA-%D9%85%D8%B1%D8%B5%D8%A7%D8%AF" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · عملیات مرصاد در تنگه چهارزبر<small>روایت تاریخی عملیات · ۵ مرداد ۱۴۰۵</small></span></a>
+          <a class="source-link" href="https://www.tasnimnews.ir/fa/news/1405/07/07/3709108/%D8%B1%D9%88%D8%A7%DB%8C%D8%AA%DB%8C-%D8%B5%D8%A7%D8%AF%D9%82%D8%A7%D9%86%D9%87-%D8%A7%D8%B2-%D8%AD%D9%85%D8%A7%D8%B3%D9%87%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C-%D8%B1%D8%B2%D9%85%D9%86%D8%AF%DA%AF%D8%A7%D9%86-%D9%87%D9%85%D8%AF%D8%A7%D9%86-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%BA-%D9%85%D9%88%D8%B2%D9%87-%D8%AF%D9%81%D8%A7%D8%B9-%D9%85%D9%82%D8%AF%D8%B3" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · باغ‌موزه دفاع مقدس همدان<small>گالری‌ها، محوطه، نشانی و ساعت بازدید · ۷ مهر ۱۴۰۵</small></span></a>
+          <a class="source-link" href="https://www.tasnimnews.ir/fa/news/1396/08/18/1569280/%D8%A2%D9%85%D8%A7%D8%AF%DA%AF%DB%8C-%DA%A9%D8%A7%D9%85%D9%84-%D8%B3%D9%BE%D8%A7%D9%87-%DA%A9%D8%B1%D9%85%D8%A7%D9%86%D8%B4%D8%A7%D9%87-%D9%87%D9%85%D8%B2%D9%85%D8%A7%D9%86-%D8%A8%D8%A7-%D8%A2%D8%BA%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DA%AF%D8%B4%D8%AA-%D8%B2%D8%A7%D8%A6%D8%B1%D8%A7%D9%86-%D8%A7%D8%B1%D8%A8%D8%B9%DB%8C%D9%86" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · ظرفیت اردوگاه‌های کرمانشاه<small>ظرفیت تاریخی اعلام‌شده اردوگاه توحید · ۱۸ آبان ۱۳۹۶</small></span></a>
+          <a class="source-link" href="https://www.tasnimnews.ir/fa/news/1394/06/08/844479/%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86%DB%8C-%D9%86%D9%85%D8%A7%DB%8C%D8%B4-%D9%81%D8%B5%D9%84-%D8%B4%DB%8C%D8%AF%D8%A7%DB%8C%DB%8C-%D8%A7%D8%B2-%DA%A9%D8%A7%D8%B1%D9%88%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%B1%D8%A7%D9%87%DB%8C%D8%A7%D9%86-%D9%86%D9%88%D8%B1-%D8%AF%D8%B1-%DA%A9%D8%B1%D9%85%D8%A7%D9%86%D8%B4%D8%A7%D9%87" target="_blank" rel="noopener"><b>↗</b><span>تسنیم · اردوگاه توحید در ورودی کرمانشاه<small>موقعیت اردوگاه از سمت جاده همدان · ۸ شهریور ۱۳۹۴</small></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>راهنمای راهیان نور غرب · نسخه معرفی و پژوهش</span>
+      <a class="backtop" href="#home">بازگشت به بالا ↑</a>
+      <span>طراحی مینیمال · تم سرمه‌ای</span>
+    </div>
+  </footer>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const cards = Array.from(document.querySelectorAll('.place-card'));
+    const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+    const emptyState = document.getElementById('emptyState');
+    let activeFilter = 'all';
+
+    function filterCards(){
+      const query = (searchInput.value || '').trim().toLocaleLowerCase('fa');
+      let visible = 0;
+      cards.forEach(card => {
+        const text = (card.dataset.search + ' ' + card.innerText).toLocaleLowerCase('fa');
+        const matchesText = !query || text.includes(query);
+        const matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+        const show = matchesText && matchesCategory;
+        card.style.display = show ? '' : 'none';
+        if(show) visible++;
+      });
+      emptyState.style.display = visible ? 'none' : 'block';
+    }
+    searchInput.addEventListener('input', filterCards);
+    filterButtons.forEach(button => button.addEventListener('click', () => {
+      filterButtons.forEach(item => item.classList.remove('active'));
+      button.classList.add('active');
+      activeFilter = button.dataset.filter;
+      filterCards();
+    }));
+
+    const progress = document.getElementById('progress');
+    window.addEventListener('scroll', () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const width = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+      progress.style.width = width + '%';
+    }, {passive:true});
+  </script>
+</body>
+</html>
